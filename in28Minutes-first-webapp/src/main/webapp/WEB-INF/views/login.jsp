@@ -7,8 +7,8 @@
 <title>Yahoo!!!!!!! From JSP</title>
 </head>
 <body>
-<form action="/login.do" method="post">
 <p><font color="red">${errorMessage}</font></p>
+<form action="/spring-mvc/login" method="post">
 Name: <input type="text" name="name"/> Password: <input type="password" name="password"/> <input type="submit" value="Login"/>
 </form>
 </body>
