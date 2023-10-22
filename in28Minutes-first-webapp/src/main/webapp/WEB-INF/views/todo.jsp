@@ -10,13 +10,16 @@
 	<div class="container">
 		<h1>Add a Todo</h1>
 		<form:form method="post" commandName="todo">
+		
+			<form:hidden path="id"/>
+		
 			<fieldset class="form-group">
 				<form:label path="desc">Description</form:label>
 				<form:input path="desc" type="text"
 					class="form-control" required="required"/>
 				<form:errors path="desc" cssClass="text-warning"/>
 			</fieldset>
-			<input class="btn btn-success" type="submit" value="Add" />
+			<input class="btn btn-success" type="submit" value="Submit" />
 		</form:form>
 	</div>
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
