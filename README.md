@@ -1,6 +1,6 @@
 # in28Minutes-first-webapp
-Walking through the Udemy course "Learn Spring MVC Framework" by in28Minutes.
-Note that course recommends using Java 8 JDK, however coded in Java 11 JDK. No issues, however step27 required the following added to the pom.xml as a workaround.
+Walking through the Udemy course "Spring MVC for Beginners" by in28Minutes.
+Note that course uses Java 8 JDK, however coded in Java 11 JDK. No issues, however step27 required the following added to the pom.xml as a workaround.
 
 		<dependency>
   			<groupId>javax.xml.bind</groupId>
