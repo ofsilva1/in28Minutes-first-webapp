@@ -7,9 +7,9 @@
 			<caption><spring:message code="todo.caption"/></caption>
 			<thead>
 				<tr>
-					<th>Description</th>
-					<th>Target Date</th>
-					<th>Is Completed?</th>
+					<th><spring:message code="description.caption" /></th>
+					<th><spring:message code="targetdate.caption" /></th>
+					<th><spring:message code="completed.caption" /></th>
 					<th></th>
 				</tr>
 			</thead>
@@ -20,15 +20,15 @@
 							value="${todo.targetDate}" /></td>
 					<td>${todo.done}</td>
 					<td><a href="/update-todo?id=${todo.id}"
-						class="btn btn-success">Update</a> <a
-						href="/delete-todo?id=${todo.id}" class="btn btn-danger">Delete</a>
+						class="btn btn-success"><spring:message code="update.caption" /></a> <a
+						href="/delete-todo?id=${todo.id}" class="btn btn-danger"><spring:message code="delete.caption" /></a>
 					</td>
 				</tr>
 			</c:forEach> </tboday>
 		</table>
 
 		<div>
-			<a class="btn btn-success" href="/add-todo">Add</a>
+			<a class="btn btn-success" href="/add-todo"><spring:message code="add.caption" /></a>
 		</div>
 	</div>
 <%@ include file="common/footer.jspf" %>
