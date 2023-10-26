@@ -2,7 +2,7 @@
 <%@ include file="common/navigation.jspf"%>
 
 <div class="container">
-	Welcome ${name}. <br /> Now, you can <a href="/list-todos">manage
+	<spring:message code="welcome.caption" /> ${name}. <br /> Now, you can <a href="/list-todos">manage
 		your todos.</a>
 </div>
 
